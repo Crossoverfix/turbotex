@@ -247,6 +247,162 @@ body {
   color: #000000;
 }
 
+/* line 134, _page.scss */
+.news {
+  background-color: #1C3254;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* line 139, _page.scss */
+.news .row > div {
+  position: relative;
+}
+/* line 143, _page.scss */
+.news__card {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 146, _page.scss */
+.news__card__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 30px auto;
+}
+/* line 153, _page.scss */
+.news__card__img__bg {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+/* line 163, _page.scss */
+.news__card__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+/* line 171, _page.scss */
+.news__card__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* line 180, _page.scss */
+.check-form {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* line 183, _page.scss */
+.check-form__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+/* line 190, _page.scss */
+.check-form__sub-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0;
+}
+/* line 196, _page.scss */
+.check-form__wrap {
+  background: #1C3254;
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin-top: 60px;
+  position: relative;
+}
+/* line 202, _page.scss */
+.check-form__wrap__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+/* line 209, _page.scss */
+.check-form__wrap__sub-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin: 0;
+}
+/* line 216, _page.scss */
+.check-form__wrap__content {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+/* line 223, _page.scss */
+.check-form__wrap__content__card {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* line 231, _page.scss */
+.check-form__wrap__content__card.active .check-form__wrap__content__card__img:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 113, 187, 0.7);
+}
+/* line 240, _page.scss */
+.check-form__wrap__content__card.active .check-form__wrap__content__card__img:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("../assets/img/tick.svg") no-repeat center;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+}
+/* line 253, _page.scss */
+.check-form__wrap__content__card input {
+  display: none;
+}
+/* line 256, _page.scss */
+.check-form__wrap__content__card__img {
+  width: 100%;
+  padding-top: 75%;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+/* line 263, _page.scss */
+.check-form__wrap__content__card__text {
+  margin: 8px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
 /* ╨Ю╤Б╨╜╨╛╨▓╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */
 /* ╨Ю╨┐╤Ж╨╕╨╛╨╜╨░╨╗╤М╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */
 /* ╨Я╨╛╨┤╨▓╨░╨╗ */
