@@ -1,0 +1,56 @@
+.header{
+  background-color: white;
+  padding: 39px 0;
+  &__wrap{
+    height: 42px;
+    position: relative;
+    align-items: center;
+  }
+  &__logo{
+    height: 42px;
+    position: relative;
+    a{
+      display: inline-block;
+      height: 100%;
+      img{
+        height: 100%;
+      }
+    }
+  }
+  &__number{
+    height: 42px;
+    position: relative;
+    text-align: right;
+    a{
+      display: inline-block;
+      height: 100%;
+      text-decoration: none;
+      line-height: 42px;
+      font-size: 21px;
+      color: #F7423B;
+      &:hover{
+        opacity: 0.8;
+      }
+      i{
+        font-size: 35px;
+        color: #546881;
+
+      }
+    }
+  }
+  &__mail{
+    height: 42px;
+    position: relative;
+    text-align: right;
+    a{
+      display: inline-block;
+      height: 100%;
+      font-size: 21px;
+      line-height: 42px;
+      color: #0071BB;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+}

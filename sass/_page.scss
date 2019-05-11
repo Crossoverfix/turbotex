@@ -1,0 +1,133 @@
+.banner{
+  position: relative;
+  &-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover!important;
+    background-position: center!important;
+  }
+  &__content{
+    padding: 200px 0;
+    h1{
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
+      color: white;
+      text-align: center;
+      padding: 0 20%;
+    }
+  }
+  &__footer{
+    padding: 24px 0;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    min-height: 80px;
+    .row{
+      align-items: center;
+    }
+    &__text{
+      p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: right;
+        color: #FFFFFF;
+        margin: 0;
+      }
+    }
+    &__btn{
+      position: relative;
+      padding-left: 70px;
+      height: 100%;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 70px;
+        width: 1px;
+        background-color: rgba(256,256,256,0.2);
+      }
+      &__link{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        background: #F7423B;
+        border-radius: 4px;
+        height: 48px;
+        line-height: 48px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+        &:hover{
+          background: #b1413a;
+        }
+      }
+    }
+  }
+}
+.cards{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 35px;
+  }
+  &__block{
+    position: relative;
+    align-self: stretch;
+    margin-bottom: 10px;
+    &__wrap{
+      padding-top: 20px;
+      position: relative;
+      height: 100%;
+      //padding-bottom: 25px;
+      &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(170.19deg, #1C3254 0%, #F7423B 100%);
+      }
+      &__numb{
+        position: absolute;
+        top: 0;
+        left: 10px;
+        background: #0071BB;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+      }
+      &__img{
+        display: inline-block;
+        width: 100%;
+        padding-top: 65%;
+        background-size: cover!important;
+        background-position: center!important;
+      }
+      &__text{
+        margin: 0;
+        padding: 25px 20px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+    }
+  }
+}
