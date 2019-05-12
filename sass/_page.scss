@@ -273,6 +273,20 @@
           line-height: 19px;
           color: white;
         }
+        &.special{
+          align-self: stretch;
+          textarea{
+            height: calc(100% - 40px);
+            resize: none;
+            padding: 10px;
+            font-size: 16px;
+            line-height: 19px;
+            color: black;
+            width: 100%;
+            border-radius: 4px;
+            text-align: center;
+          }
+        }
       }
     }
     &__control{
@@ -503,7 +517,7 @@
 .footer{
   background-color: #1C3254;
   p{
-    ont-size: 16px;
+    font-size: 16px;
     line-height: 19px;
     color: white;
     text-align: center;

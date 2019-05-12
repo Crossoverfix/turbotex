@@ -1,8 +1,145 @@
 @media screen and (max-width: 1199px){
 }
 @media screen and (max-width: 991px){
+  .header__logo{
+    height: 24px;
+  }
+  .banner__content{
+    padding: 50px 0;
+  }
+  .banner__content h1{
+    padding: 0 10%;
+  }
+  .banner__footer__text p{
+    text-align: left;
+  }
+  .banner__footer__btn:before{
+    width: 0;
+  }
+  .banner__footer__btn{
+    padding: 0;
+    text-align: center;
+  }
+  .banner__footer__btn__link{
+    width: auto;
+    padding: 0 20px;
+    margin-top: 12px;
+  }
+  .news__card{
+    width: 100%;
+  }
+  .check-form__wrap__content__card{
+    width: calc(33% - 20px);
+  }
+  .check-form__wrap__footer__input{
+    width: calc(40% - 20px);
+    margin-bottom: 20px;
+  }
+  .check-form__wrap__footer{
+    flex-wrap: wrap;
+  }
+  .check-form__wrap__footer__input__submit{
+    width: 20%;
+    transform: translateY(-100%);
+    position: relative;
+    top: -20px;
+  }
+
 }
 @media screen and (max-width: 767px){
+  .header__logo {
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .header__number{
+    text-align: left;
+  }
+  .header__wrap{
+    height: auto;
+  }
+  .header{
+    padding: 30px 0;
+  }
+  .banner__content h1{
+    font-size: 32px;
+    line-height: 37px;
+    padding: 0;
+  }
+  .banner__footer__text p{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .banner__footer{
+    padding: 16px 0;
+  }
+  .cards__title,.check-form__title,.contact__title{
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .news__card__img{
+    height: 220px;
+    width: 220px;
+  }
+  .check-form__wrap__footer__input {
+    width: calc(39% - 10px);
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .check-form__wrap__footer__input__submit{
+    top: -10px;
+    width: 22%;
+  }
+  .check-form__wrap__content__card.special{
+    width: 100%;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 574px){
+  .header__number{
+    text-align: center;
+  }
+  .header__mail{
+    text-align: center;
+  }
+  .header{
+    padding: 20px 0;
+  }
+  .check-form__wrap__content__card{
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+  .check-form__wrap__content{
+    justify-content: space-between;
+  }
+  .check-form__wrap__footer__input{
+    width: 100%;
+    margin-right: 0;
+  }
+  .check-form__wrap__footer__input__submit{
+    top: 0;
+    width: 100%;
+    transform: translateY(0);
+  }
+  .contact__map{
+    max-height: 100vh;
+  }
+  .contact__info__choice{
+    margin-bottom: 20px;
+  }
+  .header__logo{
+    height: 28px;
+  }
+  .news__card{
+    margin-bottom: 20px;
+  }
+  .check-form__wrap__control__prev{
+    margin: 0 30px;
+  }
+  .check-form__wrap__control__next{
+    margin: 0 30px;
+  }
+  .footer p{
+    font-size: 13px;
+  }
 }
