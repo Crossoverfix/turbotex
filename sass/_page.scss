@@ -288,6 +288,25 @@
           }
         }
       }
+      &__check{
+        display: inline-block;
+        width: 100%;
+        margin-top: 15px;
+        input{
+          width: 16px;
+          height: 16px;
+          margin: 1px 8px 0 0;
+          display: inline-block;
+        }
+        p{
+          vertical-align: top;
+          display: inline-block;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+          margin: 0;
+        }
+      }
     }
     &__control{
       display: flex;
@@ -349,7 +368,7 @@
           width: 100%;
           font-size: 16px;
           color: rgba(0,0,0,0.8);
-          line-height: 46px;
+          line-height: 44px;
           background-color: transparent;
         }
         &__submit{
@@ -426,6 +445,9 @@
       text-decoration: none;
       margin-bottom: 25px;
       display: inline-block;
+      &.active{
+        border-bottom: 1px solid #F7423B;
+      }
     }
     &__addr{
       font-weight: 300;
@@ -500,6 +522,20 @@
         width: 14px;
         height: 14px;
         background-color: white;
+      }
+      &.active{
+        color: #F7423B;
+        &:after{
+          content: "";
+          position: absolute;
+          left: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 4px;
+          width: 4px;
+          border-radius: 50%;
+          background-color: black;
+        }
       }
     }
   }

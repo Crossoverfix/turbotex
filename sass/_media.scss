@@ -131,7 +131,7 @@
     height: 28px;
   }
   .news__card{
-    margin-bottom: 20px;
+    margin-top: 30px;
   }
   .check-form__wrap__control__prev{
     margin: 0 30px;
@@ -141,5 +141,11 @@
   }
   .footer p{
     font-size: 13px;
+  }
+  .contact__info__choice:not(.active){
+    display: none;
+  }
+  .contact{
+    margin-top: 0;
   }
 }

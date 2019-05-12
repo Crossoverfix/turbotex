@@ -2,6 +2,7 @@ $(document).ready(function () {
     var $formPrev = $('.check-form__wrap__control__prev');
     var $formNext = $('.check-form__wrap__control__next');
     var $formCard = $('.check-form__wrap__content__card');
+    var $mapTrigger = $('[data-target]');
     $formNext.on('click',function () {
         pages('next');
         return false;
@@ -12,6 +13,10 @@ $(document).ready(function () {
     })
     $formCard.on('click',function () {
         $(this).toggleClass('active');
+        return false;
+    })
+    $mapTrigger.on('click',function () {
+        mapChange($(this).attr('data-target'));
         return false;
     })
     function pages($direction) {
@@ -39,6 +44,10 @@ $(document).ready(function () {
                 $tempContent.eq($temp - 1).addClass('active');
             }
         }
+    }
+    function mapChange(value) {
+        $mapTrigger.removeClass('active');
+        $('[data-target=' + value + ']').addClass('active');
     }
     ymaps.ready(function () {
         var myMap = new ymaps.Map("ymaps", {
