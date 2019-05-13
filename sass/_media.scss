@@ -1,4 +1,10 @@
 @media screen and (max-width: 1199px){
+  .check-form__wrap__content__card.special textarea{
+    height: 118px;
+  }
+  .check-form__wrap{
+    height: 615px;
+  }
 }
 @media screen and (max-width: 991px){
   .header__logo{
@@ -44,7 +50,12 @@
     position: relative;
     top: -20px;
   }
-
+  .check-form__wrap__content__card.special textarea{
+    height: 145px;
+  }
+  .check-form__wrap{
+    height: 780px;
+  }
 }
 @media screen and (max-width: 767px){
   .header__logo {
@@ -93,6 +104,12 @@
   .check-form__wrap__content__card.special{
     width: 100%;
     margin-right: 0;
+  }
+  .check-form__wrap__content__card.special textarea{
+    height: 50px;
+  }
+  .check-form__wrap{
+    height: 990px;
   }
 }
 @media screen and (max-width: 574px){
@@ -147,5 +164,14 @@
   }
   .contact{
     margin-top: 0;
+  }
+  .check-form__wrap{
+    height: 1200px;
+  }
+  .check-form__wrap__content__check{
+    white-space: nowrap;
+    p{
+      white-space: normal;
+    }
   }
 }

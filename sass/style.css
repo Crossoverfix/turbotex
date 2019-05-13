@@ -339,12 +339,15 @@ body {
   margin-top: 60px;
   position: relative;
   transition: all linear 0.5s;
+  min-height: 665px;
+  display: flex;
+  flex-direction: column;
 }
-/* line 213, _page.scss */
+/* line 216, _page.scss */
 .check-form__wrap__padding {
   transition: all linear 0.5s;
 }
-/* line 216, _page.scss */
+/* line 219, _page.scss */
 .check-form__wrap__title {
   font-weight: bold;
   font-size: 20px;
@@ -352,7 +355,7 @@ body {
   color: #FFFFFF;
   margin: 0 0 8px 0;
 }
-/* line 223, _page.scss */
+/* line 226, _page.scss */
 .check-form__wrap__sub-title {
   font-weight: 300;
   font-size: 16px;
@@ -360,7 +363,7 @@ body {
   color: #FFFFFF;
   margin: 0;
 }
-/* line 230, _page.scss */
+/* line 233, _page.scss */
 .check-form__wrap__content {
   display: none;
   width: 100%;
@@ -369,11 +372,11 @@ body {
   margin-top: 25px;
   flex-wrap: wrap;
 }
-/* line 231, _page.scss */
+/* line 234, _page.scss */
 .check-form__wrap__content.active {
   display: flex;
 }
-/* line 241, _page.scss */
+/* line 244, _page.scss */
 .check-form__wrap__content__card {
   width: calc(20% - 20px);
   margin-right: 20px;
@@ -381,7 +384,7 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
-/* line 249, _page.scss */
+/* line 252, _page.scss */
 .check-form__wrap__content__card.active .check-form__wrap__content__card__img:before {
   content: "";
   position: absolute;
@@ -391,7 +394,7 @@ body {
   top: 0;
   background: rgba(0, 113, 187, 0.7);
 }
-/* line 258, _page.scss */
+/* line 261, _page.scss */
 .check-form__wrap__content__card.active .check-form__wrap__content__card__img:after {
   content: "";
   position: absolute;
@@ -403,11 +406,11 @@ body {
   height: 40px;
   transform: translate(-50%, -50%);
 }
-/* line 271, _page.scss */
+/* line 274, _page.scss */
 .check-form__wrap__content__card input {
   display: none;
 }
-/* line 274, _page.scss */
+/* line 277, _page.scss */
 .check-form__wrap__content__card__img {
   width: 100%;
   padding-top: 75%;
@@ -415,7 +418,7 @@ body {
   background-position: center !important;
   position: relative;
 }
-/* line 281, _page.scss */
+/* line 284, _page.scss */
 .check-form__wrap__content__card__text {
   margin: 8px 0;
   text-align: center;
@@ -423,13 +426,13 @@ body {
   line-height: 19px;
   color: white;
 }
-/* line 288, _page.scss */
+/* line 291, _page.scss */
 .check-form__wrap__content__card.special {
   align-self: stretch;
 }
-/* line 290, _page.scss */
+/* line 293, _page.scss */
 .check-form__wrap__content__card.special textarea {
-  height: calc(100% - 40px);
+  height: 144px;
   resize: none;
   padding: 10px;
   font-size: 16px;
@@ -439,20 +442,20 @@ body {
   border-radius: 4px;
   text-align: center;
 }
-/* line 303, _page.scss */
+/* line 306, _page.scss */
 .check-form__wrap__content__check {
   display: inline-block;
   width: 100%;
   margin-top: 15px;
 }
-/* line 307, _page.scss */
+/* line 310, _page.scss */
 .check-form__wrap__content__check input {
   width: 16px;
   height: 16px;
   margin: 1px 8px 0 0;
   display: inline-block;
 }
-/* line 313, _page.scss */
+/* line 316, _page.scss */
 .check-form__wrap__content__check p {
   vertical-align: top;
   display: inline-block;
@@ -461,15 +464,16 @@ body {
   color: #FFFFFF;
   margin: 0;
 }
-/* line 323, _page.scss */
+/* line 326, _page.scss */
 .check-form__wrap__control {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   flex-wrap: nowrap;
+  margin-top: auto;
 }
-/* line 329, _page.scss */
+/* line 333, _page.scss */
 .check-form__wrap__control__prev {
   display: inline-block;
   width: 12px;
@@ -479,7 +483,7 @@ body {
   cursor: pointer;
   margin: 0 60px;
 }
-/* line 338, _page.scss */
+/* line 342, _page.scss */
 .check-form__wrap__control__next {
   display: inline-block;
   width: 12px;
@@ -489,14 +493,14 @@ body {
   cursor: pointer;
   margin: 0 60px;
 }
-/* line 347, _page.scss */
+/* line 351, _page.scss */
 .check-form__wrap__control__numb {
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
   margin: 0;
 }
-/* line 353, _page.scss */
+/* line 357, _page.scss */
 .check-form__wrap__control__slash {
   margin: 0 15px;
   font-size: 0;
@@ -504,7 +508,7 @@ body {
   height: 14px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 361, _page.scss */
+/* line 365, _page.scss */
 .check-form__wrap__footer {
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -514,7 +518,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
 }
-/* line 369, _page.scss */
+/* line 373, _page.scss */
 .check-form__wrap__footer__input {
   border-radius: 4px;
   background-color: white;
@@ -524,7 +528,7 @@ body {
   padding: 0 15px;
   margin-right: 20px;
 }
-/* line 377, _page.scss */
+/* line 381, _page.scss */
 .check-form__wrap__footer__input input {
   border: none;
   outline: none;
@@ -534,7 +538,7 @@ body {
   line-height: 44px;
   background-color: transparent;
 }
-/* line 386, _page.scss */
+/* line 390, _page.scss */
 .check-form__wrap__footer__input__submit {
   border-radius: 4px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #F7423B;
@@ -542,11 +546,11 @@ body {
   width: 16%;
   position: relative;
 }
-/* line 392, _page.scss */
+/* line 396, _page.scss */
 .check-form__wrap__footer__input__submit:hover {
   background: #F7423B;
 }
-/* line 395, _page.scss */
+/* line 399, _page.scss */
 .check-form__wrap__footer__input__submit input {
   width: 100%;
   height: 100%;
@@ -561,7 +565,7 @@ body {
   cursor: pointer;
 }
 
-/* line 414, _page.scss */
+/* line 418, _page.scss */
 .contact__title {
   font-weight: bold;
   font-size: 30px;
@@ -569,25 +573,25 @@ body {
   color: #000000;
   margin-bottom: 60px;
 }
-/* line 421, _page.scss */
+/* line 425, _page.scss */
 .contact__info {
   background-color: #1C3254;
   padding-top: 25px;
   padding-bottom: 25px;
 }
-/* line 425, _page.scss */
+/* line 429, _page.scss */
 .contact__info__choice {
   padding: 0;
 }
-/* line 429, _page.scss */
+/* line 433, _page.scss */
 .contact__info__choice.active .contact__info__title {
   border-bottom: 1px solid #F7423B;
 }
-/* line 432, _page.scss */
+/* line 436, _page.scss */
 .contact__info__choice.active .contact__info__ratio {
   color: #F7423B;
 }
-/* line 434, _page.scss */
+/* line 438, _page.scss */
 .contact__info__choice.active .contact__info__ratio:after {
   content: "";
   position: absolute;
@@ -599,7 +603,7 @@ body {
   border-radius: 50%;
   background-color: black;
 }
-/* line 449, _page.scss */
+/* line 453, _page.scss */
 .contact__info__title {
   font-weight: bold;
   font-size: 20px;
@@ -611,11 +615,11 @@ body {
   margin-bottom: 25px;
   display: inline-block;
 }
-/* line 459, _page.scss */
+/* line 463, _page.scss */
 .contact__info__title.active {
   border-bottom: 1px solid #F7423B;
 }
-/* line 463, _page.scss */
+/* line 467, _page.scss */
 .contact__info__addr {
   font-weight: 300;
   font-size: 16px;
@@ -623,7 +627,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 25px;
 }
-/* line 470, _page.scss */
+/* line 474, _page.scss */
 .contact__info__number {
   font-weight: 300;
   font-size: 16px;
@@ -636,7 +640,7 @@ body {
   width: 100%;
   text-decoration: none;
 }
-/* line 481, _page.scss */
+/* line 485, _page.scss */
 .contact__info__number:before {
   content: "";
   position: absolute;
@@ -648,7 +652,7 @@ body {
   background: url("../assets/img/phone.svg") no-repeat center;
   background-size: contain;
 }
-/* line 493, _page.scss */
+/* line 497, _page.scss */
 .contact__info__mail {
   font-weight: 300;
   font-size: 16px;
@@ -661,7 +665,7 @@ body {
   width: 100%;
   text-decoration: none;
 }
-/* line 504, _page.scss */
+/* line 508, _page.scss */
 .contact__info__mail:before {
   content: "";
   position: absolute;
@@ -673,7 +677,7 @@ body {
   background: url("../assets/img/mail.svg") no-repeat center;
   background-size: contain;
 }
-/* line 516, _page.scss */
+/* line 520, _page.scss */
 .contact__info__ratio {
   font-size: 16px;
   line-height: 19px;
@@ -685,7 +689,7 @@ body {
   width: 100%;
   text-decoration: none;
 }
-/* line 526, _page.scss */
+/* line 530, _page.scss */
 .contact__info__ratio:before {
   content: "";
   position: absolute;
@@ -697,11 +701,11 @@ body {
   height: 14px;
   background-color: white;
 }
-/* line 537, _page.scss */
+/* line 541, _page.scss */
 .contact__info__ratio.active {
   color: #F7423B;
 }
-/* line 539, _page.scss */
+/* line 543, _page.scss */
 .contact__info__ratio.active:after {
   content: "";
   position: absolute;
@@ -713,24 +717,24 @@ body {
   border-radius: 50%;
   background-color: black;
 }
-/* line 553, _page.scss */
+/* line 557, _page.scss */
 .contact__map {
   height: 560px;
   position: relative;
   background-color: gray;
   padding: 0;
 }
-/* line 558, _page.scss */
+/* line 562, _page.scss */
 .contact__map .maps {
   width: 100%;
   height: 100%;
 }
 
-/* line 564, _page.scss */
+/* line 568, _page.scss */
 .footer {
   background-color: #1C3254;
 }
-/* line 566, _page.scss */
+/* line 570, _page.scss */
 .footer p {
   font-size: 16px;
   line-height: 19px;
@@ -742,229 +746,274 @@ body {
 /* ╨Ю╤Б╨╜╨╛╨▓╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */
 /* ╨Ю╨┐╤Ж╨╕╨╛╨╜╨░╨╗╤М╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ */
 /* ╨Я╨╛╨┤╨▓╨░╨╗ */
+@media screen and (max-width: 1199px) {
+  /* line 2, _media.scss */
+  .check-form__wrap__content__card.special textarea {
+    height: 118px;
+  }
+
+  /* line 5, _media.scss */
+  .check-form__wrap {
+    height: 615px;
+  }
+}
 @media screen and (max-width: 991px) {
-  /* line 4, _media.scss */
+  /* line 10, _media.scss */
   .header__logo {
     height: 24px;
   }
 
-  /* line 7, _media.scss */
+  /* line 13, _media.scss */
   .banner__content {
     padding: 50px 0;
   }
 
-  /* line 10, _media.scss */
+  /* line 16, _media.scss */
   .banner__content h1 {
     padding: 0 10%;
   }
 
-  /* line 13, _media.scss */
+  /* line 19, _media.scss */
   .banner__footer__text p {
     text-align: left;
   }
 
-  /* line 16, _media.scss */
+  /* line 22, _media.scss */
   .banner__footer__btn:before {
     width: 0;
   }
 
-  /* line 19, _media.scss */
+  /* line 25, _media.scss */
   .banner__footer__btn {
     padding: 0;
     text-align: center;
   }
 
-  /* line 23, _media.scss */
+  /* line 29, _media.scss */
   .banner__footer__btn__link {
     width: auto;
     padding: 0 20px;
     margin-top: 12px;
   }
 
-  /* line 28, _media.scss */
+  /* line 34, _media.scss */
   .news__card {
     width: 100%;
   }
 
-  /* line 31, _media.scss */
+  /* line 37, _media.scss */
   .check-form__wrap__content__card {
     width: calc(33% - 20px);
   }
 
-  /* line 34, _media.scss */
+  /* line 40, _media.scss */
   .check-form__wrap__footer__input {
     width: calc(40% - 20px);
     margin-bottom: 20px;
   }
 
-  /* line 38, _media.scss */
+  /* line 44, _media.scss */
   .check-form__wrap__footer {
     flex-wrap: wrap;
   }
 
-  /* line 41, _media.scss */
+  /* line 47, _media.scss */
   .check-form__wrap__footer__input__submit {
     width: 20%;
     transform: translateY(-100%);
     position: relative;
     top: -20px;
   }
+
+  /* line 53, _media.scss */
+  .check-form__wrap__content__card.special textarea {
+    height: 145px;
+  }
+
+  /* line 56, _media.scss */
+  .check-form__wrap {
+    height: 780px;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 50, _media.scss */
+  /* line 61, _media.scss */
   .header__logo {
     height: 30px;
     margin-bottom: 10px;
     text-align: center;
   }
 
-  /* line 55, _media.scss */
+  /* line 66, _media.scss */
   .header__number {
     text-align: left;
   }
 
-  /* line 58, _media.scss */
+  /* line 69, _media.scss */
   .header__wrap {
     height: auto;
   }
 
-  /* line 61, _media.scss */
+  /* line 72, _media.scss */
   .header {
     padding: 30px 0;
   }
 
-  /* line 64, _media.scss */
+  /* line 75, _media.scss */
   .banner__content h1 {
     font-size: 32px;
     line-height: 37px;
     padding: 0;
   }
 
-  /* line 69, _media.scss */
+  /* line 80, _media.scss */
   .banner__footer__text p {
     font-size: 14px;
     line-height: 17px;
   }
 
-  /* line 73, _media.scss */
+  /* line 84, _media.scss */
   .banner__footer {
     padding: 16px 0;
   }
 
-  /* line 76, _media.scss */
+  /* line 87, _media.scss */
   .cards__title, .check-form__title, .contact__title {
     font-size: 20px;
     line-height: 23px;
   }
 
-  /* line 80, _media.scss */
+  /* line 91, _media.scss */
   .news__card__img {
     height: 220px;
     width: 220px;
   }
 
-  /* line 84, _media.scss */
+  /* line 95, _media.scss */
   .check-form__wrap__footer__input {
     width: calc(39% - 10px);
     margin-bottom: 10px;
     margin-right: 10px;
   }
 
-  /* line 89, _media.scss */
+  /* line 100, _media.scss */
   .check-form__wrap__footer__input__submit {
     top: -10px;
     width: 22%;
   }
 
-  /* line 93, _media.scss */
+  /* line 104, _media.scss */
   .check-form__wrap__content__card.special {
     width: 100%;
     margin-right: 0;
   }
+
+  /* line 108, _media.scss */
+  .check-form__wrap__content__card.special textarea {
+    height: 50px;
+  }
+
+  /* line 111, _media.scss */
+  .check-form__wrap {
+    height: 990px;
+  }
 }
 @media screen and (max-width: 574px) {
-  /* line 99, _media.scss */
+  /* line 116, _media.scss */
   .header__number {
     text-align: center;
   }
 
-  /* line 102, _media.scss */
+  /* line 119, _media.scss */
   .header__mail {
     text-align: center;
   }
 
-  /* line 105, _media.scss */
+  /* line 122, _media.scss */
   .header {
     padding: 20px 0;
   }
 
-  /* line 108, _media.scss */
+  /* line 125, _media.scss */
   .check-form__wrap__content__card {
     width: calc(50% - 10px);
     margin-right: 0;
   }
 
-  /* line 112, _media.scss */
+  /* line 129, _media.scss */
   .check-form__wrap__content {
     justify-content: space-between;
   }
 
-  /* line 115, _media.scss */
+  /* line 132, _media.scss */
   .check-form__wrap__footer__input {
     width: 100%;
     margin-right: 0;
   }
 
-  /* line 119, _media.scss */
+  /* line 136, _media.scss */
   .check-form__wrap__footer__input__submit {
     top: 0;
     width: 100%;
     transform: translateY(0);
   }
 
-  /* line 124, _media.scss */
+  /* line 141, _media.scss */
   .contact__map {
     max-height: 100vh;
   }
 
-  /* line 127, _media.scss */
+  /* line 144, _media.scss */
   .contact__info__choice {
     margin-bottom: 20px;
   }
 
-  /* line 130, _media.scss */
+  /* line 147, _media.scss */
   .header__logo {
     height: 28px;
   }
 
-  /* line 133, _media.scss */
+  /* line 150, _media.scss */
   .news__card {
     margin-top: 30px;
   }
 
-  /* line 136, _media.scss */
+  /* line 153, _media.scss */
   .check-form__wrap__control__prev {
     margin: 0 30px;
   }
 
-  /* line 139, _media.scss */
+  /* line 156, _media.scss */
   .check-form__wrap__control__next {
     margin: 0 30px;
   }
 
-  /* line 142, _media.scss */
+  /* line 159, _media.scss */
   .footer p {
     font-size: 13px;
   }
 
-  /* line 145, _media.scss */
+  /* line 162, _media.scss */
   .contact__info__choice:not(.active) {
     display: none;
   }
 
-  /* line 148, _media.scss */
+  /* line 165, _media.scss */
   .contact {
     margin-top: 0;
+  }
+
+  /* line 168, _media.scss */
+  .check-form__wrap {
+    height: 1200px;
+  }
+
+  /* line 171, _media.scss */
+  .check-form__wrap__content__check {
+    white-space: nowrap;
+  }
+  /* line 173, _media.scss */
+  .check-form__wrap__content__check p {
+    white-space: normal;
   }
 }
 /* ╨Ь╨╡╨┤╨╕╨░ ╨╖╨░╨┐╤А╨╛╤Б╤Л */

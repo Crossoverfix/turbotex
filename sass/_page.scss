@@ -210,6 +210,9 @@
     margin-top: 60px;
     position: relative;
     transition: all linear 0.5s;
+    min-height: 665px;
+    display: flex;
+    flex-direction: column;
     &__padding{
       transition: all linear 0.5s;
     }
@@ -288,7 +291,7 @@
         &.special{
           align-self: stretch;
           textarea{
-            height: calc(100% - 40px);
+            height: 144px;
             resize: none;
             padding: 10px;
             font-size: 16px;
@@ -326,6 +329,7 @@
       justify-content: center;
       width: 100%;
       flex-wrap: nowrap;
+      margin-top: auto;
       &__prev{
         display: inline-block;
         width: 12px;
