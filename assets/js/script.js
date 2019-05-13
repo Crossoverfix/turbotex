@@ -31,17 +31,21 @@ $(document).ready(function () {
             if($temp >= $tempContent.length - 1){
                 $tempContent.removeClass('active');
                 $tempContent.eq(0).addClass('active');
+                $('.check-form__wrap__control__numb').eq(0).html(1);
             } else {
                 $tempContent.removeClass('active');
                 $tempContent.eq($temp + 1).addClass('active');
+                $('.check-form__wrap__control__numb').eq(0).html($temp + 2);
             }
         } else if ($direction == 'prev'){
             if($temp <= 0){
                 $tempContent.removeClass('active');
                 $tempContent.eq($tempContent.length - 1).addClass('active');
+                $('.check-form__wrap__control__numb').eq(0).html($tempContent.length);
             } else {
                 $tempContent.removeClass('active');
                 $tempContent.eq($temp - 1).addClass('active');
+                $('.check-form__wrap__control__numb').eq(0).html($temp);
             }
         }
     }

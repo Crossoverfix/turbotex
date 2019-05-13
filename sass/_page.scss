@@ -179,6 +179,17 @@
 .check-form{
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.04);
+  }
   &__title{
     font-weight: bold;
     font-size: 30px;
@@ -198,8 +209,9 @@
     padding: 25px 20px;
     margin-top: 60px;
     position: relative;
+    transition: all linear 0.5s;
     &__padding{
-
+      transition: all linear 0.5s;
     }
     &__title{
       font-weight: bold;
@@ -399,7 +411,6 @@
   }
 }
 .contact{
-  margin-top: 60px;
   &__title{
     font-weight: bold;
     font-size: 30px;
