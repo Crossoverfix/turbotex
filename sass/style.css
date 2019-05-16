@@ -40,7 +40,7 @@ body {
 }
 /* line 9, _header.scss */
 .header__logo {
-  height: 42px;
+  height: 38px;
   position: relative;
 }
 /* line 12, _header.scss */
@@ -86,7 +86,7 @@ body {
 .header__mail a {
   display: inline-block;
   height: 100%;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 42px;
   color: #0071BB;
 }
