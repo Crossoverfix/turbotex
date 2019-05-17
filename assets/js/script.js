@@ -15,10 +15,7 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         return false;
     })
-    $mapTrigger.on('click',function () {
-        mapChange($(this).attr('data-target'));
-        return false;
-    })
+
     function pages($direction) {
         let $temp = 0;
         let $tempContent = $('.check-form__wrap__content');
@@ -59,10 +56,6 @@ $(document).ready(function () {
             }
         }
     }
-    function mapChange(value) {
-        $mapTrigger.removeClass('active');
-        $('[data-target=' + value + ']').addClass('active');
-    }
     ymaps.ready(function () {
         var myMap = new ymaps.Map("ymaps", {
             center: [55.441875, 37.724598],
@@ -86,5 +79,26 @@ $(document).ready(function () {
         });
         myMap.geoObjects.add(myGeoOfice);
         myMap.geoObjects.add(myGeoRem);
+        $mapTrigger.on('click',function () {
+            // mapChange($(this).attr('data-target'));
+            $mapTrigger.removeClass('active');
+            let value = $(this).attr('data-target');
+            $('[data-target=' + value + ']').addClass('active');
+            if(value == 'first'){
+                myMap.setCenter([55.441875, 37.724598],18);
+            } else if(value == 'second'){
+                myMap.setCenter([55.329472, 37.716639],18);
+            }
+            return false;
+        })
     });
+    // function mapChange(value) {
+    //     $mapTrigger.removeClass('active');
+    //     $('[data-target=' + value + ']').addClass('active');
+    //     if(value == 'first'){
+    //         myMap.setCenter([55.441875, 37.724598],18);
+    //     } else if(value == 'second'){
+    //         myMap.setCenter([55.329472, 37.716639],18);
+    //     }
+    // }
 })
