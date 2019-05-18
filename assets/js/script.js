@@ -13,6 +13,11 @@ $(document).ready(function () {
     })
     $formCard.on('click',function () {
         $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).find('input').prop('checked',true);
+        } else {
+            $(this).find('input').prop('checked',false);
+        }
         return false;
     })
 
